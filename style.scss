@@ -1,0 +1,82 @@
+.container {
+    /*background-color: #00C9A7; */
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "dis dis dis dis"
+        "AC C div times"
+        "seven eight nine minus"
+        "four five six plus"
+        "one two three equal"
+        "zero zero dot equal"
+        ; 
+
+        .padButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #7c8b89;
+            color: #fff;
+            border: 1px solid #000;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        } 
+        .padButton:hover {
+            border: 1px solid #fff;
+            color: #485C5A;
+        }
+        .padButton:nth-child(2),
+        .padButton:nth-child(3) {
+            background-color: #FF6600;
+            /*background: linear-gradient(to right, red, orange); */
+        }
+        .dark-gray {
+            background-color: #333;
+        }
+        .AC, .C {
+            background-color: #FF8066;
+        }
+        .blue {
+           background-color:  #1fac82;
+        }
+        .dis {
+            grid-area: dis;
+            background-color: #000 !important; /* display area */
+            text-align: right;
+            font-size: 20px;
+            input {
+                width: 100%;
+                color:#fff;
+                padding: 5px 20px;
+                text-align: right;
+                font-weight: bold;
+                background-color: #000;
+                border-bottom: none !important;
+            }
+            input::placeholder {
+                color: #fff;
+            }
+            .total {
+                padding: 5px 20px;
+                color: yellow;
+            }
+        }
+        .zero {
+            grid-area: zero;
+        }
+        .equal {
+            grid-area: equal;
+        }
+    } 
+    
+}
+

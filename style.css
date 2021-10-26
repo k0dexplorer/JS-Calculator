@@ -1,0 +1,122 @@
+.container {
+  /*background-color: #00C9A7; */
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: "dis dis dis dis" "AC C div times" "seven eight nine minus" "four five six plus" "one two three equal" "zero zero dot equal";
+}
+
+.container .grid .padButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px;
+  background-color: #7c8b89;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .grid .padButton:hover {
+  border: 1px solid #fff;
+  color: #485C5A;
+}
+
+.container .grid .padButton:nth-child(2),
+.container .grid .padButton:nth-child(3) {
+  background-color: #FF6600;
+  /*background: linear-gradient(to right, red, orange); */
+}
+
+.container .grid .dark-gray {
+  background-color: #333;
+}
+
+.container .grid .AC, .container .grid .C {
+  background-color: #FF8066;
+}
+
+.container .grid .blue {
+  background-color: #1fac82;
+}
+
+.container .grid .dis {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: dis;
+  background-color: #000 !important;
+  /* display area */
+  text-align: right;
+  font-size: 20px;
+}
+
+.container .grid .dis input {
+  width: 100%;
+  color: #fff;
+  padding: 5px 20px;
+  text-align: right;
+  font-weight: bold;
+  background-color: #000;
+  border-bottom: none !important;
+}
+
+.container .grid .dis input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.container .grid .dis input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.container .grid .dis input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.container .grid .dis input::placeholder {
+  color: #fff;
+}
+
+.container .grid .dis .total {
+  padding: 5px 20px;
+  color: yellow;
+}
+
+.container .grid .zero {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+.container .grid .equal {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: equal;
+}
+/*# sourceMappingURL=style.css.map */
